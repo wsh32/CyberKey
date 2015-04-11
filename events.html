@@ -108,8 +108,10 @@
 						</div>
 					</li>
 				</ul>
+				
 				<div class="container">
-					<a href="#add" class="btn center-align waves-effect waves-light blue modal-trigger">Adding an event</a>
+					<a href="#add" class="btn center-align waves-effect waves-light blue modal-trigger">Add an event</a>
+					<a href="#signup" class="btn center-align waves-effect waves-light blue modal-trigger">Sign up for an event</a>
 				</div>
 				<div id="add" class="modal">
 					<div class="modal-content">
@@ -120,6 +122,40 @@
 						<a href="#!" class="modal-action modal-close waves-effect waves-blue btn-flat">Got it!</a>
 						<a href="contact" class="modal-action modal-close waves-effect waves-blue btn-flat">Contact us</a>
 					</div>
+				</div>
+				<div id="signup" class="modal">
+					<div class="modal-content">
+						<div class="section">
+							<div class="row">
+								<form class="col s12" id="form">
+									<div class="row">
+										<div class="input-field col s12 m6 l6">
+											<input id="first_name" name="firstname" type="text" class="validate">
+											<label for="first_name">First Name</label>
+										</div>
+										<div class="input-field col s12 m6 l6">
+											<input id="last_name" name="lastname" type="text" class="validate">
+											<label for="last_name">Last Name</label>
+										</div>
+									</div>
+									<div class="row">
+										<div class="input-field col s12">
+											<input id="event" name="event" type="text" class="validate">
+											<label for="event" class="">Event</label>
+										</div>
+									</div>
+									<input name="private_key" type="hidden" value="b5vl7W4EMjC25RKvv2w4">
+									<button class="btn waves-effect waves-light blue accent-2 modal-action modal-close" type="submit" name="action">Submit
+										<i class="mdi-content-send right"></i>
+									</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<br>
+				<div class="container">
+					<div id="response" class="center-align"></div>
 				</div>
 			</div>
 		</main>
@@ -166,6 +202,7 @@
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 		<script src="js/materialize.min.js"></script>
+		<script src="scripts/event.js"></script>
 	</body>
 
 </html>
