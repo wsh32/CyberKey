@@ -11,7 +11,7 @@ $(function() {
 				contentType: false,
 				success: function(data) {
 					console.log(data);
-					toast("Thank you for your submission. ☺");
+					Materialize.toast("Thank you for your submission. ☺");
 				}
 			});
 			return false;
