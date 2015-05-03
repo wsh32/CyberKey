@@ -1,0 +1,97 @@
+@.icon-block {
+	padding: 0 15px;
+}
+
+.input-field input[type=text]:focus + label, .input-field input[type=password]:focus + label, .input-field input[type=email]:focus + label, .input-field input[type=date]:focus + label, .input-field textarea:focus + label {
+	color: #536dfe;
+}
+
+.input-field .prefix.active {
+	color: #536dfe;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=date]:focus, textarea:focus {
+	border-bottom: 1px solid #536dfe;
+	-webkit-box-shadow: 0 1px 0 0 #536dfe;
+	-moz-box-shadow: 0 1px 0 0 #536dfe;
+	box-shadow: 0 1px 0 0 #536dfe;
+}
+
+@media only screen and (min-width : 601px) and (max-width : 992px) {
+	.modal {
+		width: 80%;
+	};
+}
+
+@media only screen and (max-width : 600px) {
+	.modal {
+		width: 100%;
+	};
+}
+
+ul.side-nav li.logo {
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 125px;
+}
+
+ul.side-nav li.logo:hover {
+	background-color: transparent;
+}
+
+#logo-container {
+	height: 80px;
+	margin-bottom: 32px;
+}
+
+#front-page-logo {
+	display: inline-block;
+	height: 100%;
+	pointer-events: none;
+};
+
+@media only screen and (max-width : 992px) {
+	header, main, footer {
+		padding-left: 0;
+	};
+}
+
+a, .card a, .card a:hover {
+	color: #536dfe;
+}
+
+ul.side-nav.full li, ul.side-nav. li {
+	transition: background-color 0.3s ease 0s;
+	line-height: 64px;
+}
+
+ul.side-nav.full li:hover, ul.side-nav. li:hover {
+	background-color: #edf0fe;
+}
+
+ul.side-nav.full li.active, ul.side-nav. li.active {
+	background-color: #a9b6fe;
+}
+
+body {
+	display: flex;
+	height: 100vh;
+	flex-direction: column;
+	overflow-y: scroll;
+}
+
+header, footer {
+	flex-shrink: 0;
+}
+
+b {
+	color: #536dfe;
+}
+
+main {
+	flex: 1 0 auto;
+}
+
+#slide-out, #nav-mobile {
+	overflow-y: auto;
+}

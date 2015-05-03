@@ -9,33 +9,52 @@
 		<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 		<script src="scripts/init.js"></script>
-		<link href="favicon.png" rel="shortcut icon"/>
+		<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+		<link href="logo.png" rel="shortcut icon"/>
 	</head>
 
 	<body>
 		<header>
 			<nav class="light-blue lighten-1" role="navigation">
 				<div class="container">
-					<div class="nav-wrapper"><a id="logo-container" href="#" class="brand-logo hide-on-med-and-down">CAMS Key Club</a>
+					<div class="nav-wrapper"><a id="logo-container" href="index.html" class="brand-logo hide-on-med-and-down">CAMS Key Club</a>
 						<ul class="right hide-on-med-and-down">
-							<li><a href="index">Home</a></li>
-							<li><a href="events">Events</a></li>
-							<li><a href="officers">Officers</a></li>
-							<li><a href="bulletin">Bulletin</a></li>
-							<li><a href="#">Connect</a></li>
-							<li><a href="about">About</a></li>
-							<li><a href="contact">Contact</a></li>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="events.html">Events</a></li>
+							<li><a class="dropdown-button" href="#!" data-activates="resources">Resources<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
+							<ul id='resources' class='dropdown-content'>
+								<li><a class="blue-text" href="#">Resources</a></li>
+								<li class="divider"></li>
+								<li><a class="blue-text" href="bulletin.html">Bulletin</a></li>
+								<li><a class="blue-text" href="connect.html">Connect</a></li>
+								<li><a class="blue-text" href="officers.html">Officers</a></li>
+							</ul>
+							<li><a href="about.html">About</a></li>
+							<li><a href="contact.html">Contact</a></li>
 						</ul>
 
 						<ul id="nav-mobile" class="side-nav">
-							<li style="text-align:center, margin-top:32px, margin-bottom:16px, border-bottom:1px solid #ddd"><object style="display:inline-block, height:100%, pointer-events:none" type="image/png" data="graphics/logo/bluewhite.png"></object></li>
-							<li><a href="index">Home</a></li>
-							<li><a href="events">Events</a></li>
-							<li><a href="officers">Officers</a></li>
-							<li><a href="bulletin">Bulletin</a></li>
-							<li><a href="#">Connect</a></li>
-							<li><a href="about">About</a></li>
-							<li><a href="contact">Contact</a></li>
+							<li class="logo center"><a id="logo-container" href="index.html" class="brand-logo">
+								<object id="front-page-logo" type="image/png" data="logo.png"></object></a></li>
+							<div class="divider"></div>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="events.html">Events</a></li>
+							<li><a href="officers.html">Officers</a></li>
+							<li class="no-padding">
+								<ul class="collapsible collapsible-accordion">
+									<li>
+										<a class="collapsible-header">Resources</a>
+										<div class="collapsible-body">
+											<ul>
+												<li><a href="bulletin.html">Bulletin</a></li>
+												<li><a href="connect.html">Connect</a></li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="contact.html">Contact</a></li>
 						</ul>
 						<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
 					</div>
@@ -130,13 +149,13 @@
 					<div class="col l3 s12">
 						<h5 class="white-text">Pages</h5>
 						<ul>
-							<li><a class="white-text" href="index">Home</a></li>
-							<li><a class="white-text" href="events">Events</a></li>
-							<li><a class="white-text" href="officers">Officers</a></li>
-							<li><a class="white-text" href="bulletin">Bulletin</a></li>
+							<li><a class="white-text" href="index.html">Home</a></li>
+							<li><a class="white-text" href="events.html">Events</a></li>
+							<li><a class="white-text" href="officers.html">Officers</a></li>
+							<li><a class="white-text" href="bulletin.html">Bulletin</a></li>
 							<li><a class="white-text" href="#">Connect</a></li>
-							<li><a class="white-text" href="about">About</a></li>
-							<li><a class="white-text" href="contact">Contact</a></li>
+							<li><a class="white-text" href="about.html">About</a></li>
+							<li><a class="white-text" href="contact.html">Contact</a></li>
 						</ul>
 					</div>
 					<div class="col l3 s12">

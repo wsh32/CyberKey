@@ -9,33 +9,51 @@
 		<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 		<script src="scripts/init.js"></script>
-		<link href="favicon.png" rel="shortcut icon"/>
+		<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+		<link href="logo.png" rel="shortcut icon"/>
 	</head>
 
 	<body>
 		<header>
 			<nav class="light-blue lighten-1" role="navigation">
 				<div class="container">
-					<div class="nav-wrapper"><a id="logo-container" href="#" class="brand-logo hide-on-med-and-down">CAMS Key Club</a>
+					<div class="nav-wrapper"><a id="logo-container" href="index.html" class="brand-logo hide-on-med-and-down">CAMS Key Club</a>
 						<ul class="right hide-on-med-and-down">
-							<li><a href="index">Home</a></li>
-							<li><a href="events">Events</a></li>
-							<li><a href="#">Officers</a></li>
-							<li><a href="bulletin">Bulletin</a></li>
-							<li><a href="connect">Connect</a></li>
-							<li><a href="about">About</a></li>
-							<li><a href="contact">Contact</a></li>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="events.html">Events</a></li>
+							<li><a class="dropdown-button" href="#!" data-activates="resources">Resources<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
+							<ul id='resources' class='dropdown-content'>
+								<li><a class="blue-text" href="#">Resources</a></li>
+								<li class="divider"></li>
+								<li><a class="blue-text" href="bulletin.html">Bulletin</a></li>
+								<li><a class="blue-text" href="connect.html">Connect</a></li>
+								<li><a class="blue-text" href="officers.html">Officers</a></li>
+							</ul>
+							<li><a href="about.html">About</a></li>
+							<li><a href="contact.html">Contact</a></li>
 						</ul>
 
 						<ul id="nav-mobile" class="side-nav">
-							<li style="text-align:center, margin-top:32px, margin-bottom:16px, border-bottom:1px solid #ddd"><object style="display:inline-block, height:100%, pointer-events:none" type="image/png" data="graphics/logo/bluewhite.png"></object></li>
-							<li><a href="index">Home</a></li>
-							<li><a href="events">Events</a></li>
-							<li><a href="#">Officers</a></li>
-							<li><a href="bulletin">Bulletin</a></li>
-							<li><a href="connect">Connect</a></li>
-							<li><a href="about">About</a></li>
-							<li><a href="contact">Contact</a></li>
+							<li class="logo center"><a id="logo-container" href="index.html" class="brand-logo">
+								<object id="front-page-logo" type="image/png" data="logo.png"></object></a></li>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="events.html">Events</a></li>
+							<li><a href="officers.html">Officers</a></li>
+							<li class="no-padding">
+								<ul class="collapsible collapsible-accordion">
+									<li>
+										<a class="collapsible-header">Resources</a>
+										<div class="collapsible-body">
+											<ul>
+												<li><a href="bulletin.html">Bulletin</a></li>
+												<li><a href="connect.html">Connect</a></li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="contact.html">Contact</a></li>
 						</ul>
 						<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
 					</div>
@@ -54,13 +72,13 @@
 				<div class="section">
 					<div class="row">
 						<div class="col m2 s12">
-							<img class="circle materialboxed" width="140" src="graphics/officers/chris.png">
+							<img class="circle materialboxed" width="140" src="graphics/officers/ChrisS.png">
 						</div>
 						<div class="col m10 s12">
 							<h5>President: Christopher Soo-Hoo</h5>
 							<p class="blue-text"><b>Email:</b> <a href="mailto:christophersoohoo28@gmail.com">christophersoohoo28@gmail.com</a><br>
 							<b>Graduation Year:</b> 2017<br>
-							<b>Quote:</b> "I hate technology!" -<i>Christopher Soo-Hoo, 2015</i></p>
+							<b>Fun Fact:</b> When not working on key club, models and draws in his free time. You can see his artwork showcased in The Louvre.</i></p>
 						</div>
 					</div>
 				</div>
@@ -68,13 +86,13 @@
 				<div class="section">
 					<div class="row">
 						<div class="col m2 s12">
-							<img class="circle materialboxed" width="140" src="graphics/officers/placeholder-female.png">
+							<img class="circle materialboxed" width="140" src="graphics/officers/AileenM.png">
 						</div>
 						<div class="col m10 s12">
 							<h5>Co-Vice President: Aileen Maranan</h5>
 							<p class="blue-text"><b>Email:</b> <a href="mailto:kaileeny19@gmail.com">kaileeny19@gmail.com</a><br>
 							<b>Graduation Year:</b> 2017<br>
-							<b>Quote:</b> ??????</p>
+							<b>Fun Fact:</b> I've never owned a nightlight</p>
 						</div>
 					</div>
 				</div>
@@ -82,26 +100,26 @@
 				<div class="section">
 					<div class="row">
 						<div class="col m2 s12">
-							<img class="circle materialboxed" width="140" src="graphics/officers/placeholder-female.png">
+							<img class="circle materialboxed" width="140" src="graphics/officers/EmilyT.png">
 						</div>
 						<div class="col m10 s12">
 							<h5>Co-Vice President: Emily Teranishi</h5>
 							<p class="blue-text"><b>Email:</b> <a href="mailto:emilyteranishi@gmail.com">emilyteranishi@gmail.com</a><br>
 							<b>Graduation Year:</b> 2017<br>
-							<b>Quote:</b> ??????</p>
+							<b>Fun Fact:</b> I love puzzless</p>
 						</div>
 					</div>
 				</div>
 				<div class="divider"></div><div class="section">
 					<div class="row">
 						<div class="col m2 s12">
-							<img class="circle materialboxed" width="140" src="graphics/officers/matthew.png">
+							<img class="circle materialboxed" width="140" src="graphics/officers/MatthewF.png">
 						</div>
 						<div class="col m10 s12">
 							<h5>Secretary: Matthew Ferrer</h5>
 							<p class="blue-text"><b>Email:</b> <a href="mailto:mathferrer1999@gmail.com">mathferrer1999@gmail.com</a><br>
 							<b>Graduation Year:</b> 2017<br>
-							<b>Quote:</b> “How wonderful it is that nobody need wait a single moment before starting to improve the world.“ <i>-Anne Frank</i></p>
+							<b>Fun Fact:</b> ??????</p>
 						</div>
 					</div>
 				</div>
@@ -109,13 +127,13 @@
 				<div class="section">
 					<div class="row">
 						<div class="col m2 s12">
-							<img class="circle materialboxed" width="140" src="graphics/officers/placeholder-female.png">
+							<img class="circle materialboxed" width="140" src="graphics/officers/LauraL.jpg">
 						</div>
 						<div class="col m10 s12">
 							<h5>Treasurer: Laura Le</h5>
 							<p class="blue-text"><b>Email:</b> <a href="mailto:laurale1220@gmail.com">laurale1220@gmail.com</a><br>
 							<b>Graduation Year:</b> 2017<br>
-							<b>Quote:</b> ??????</p>
+							<b>Fun Fact:</b> My hobbies include doodling, netflix, and tumblr</p>
 						</div>
 					</div>
 				</div>
@@ -123,13 +141,13 @@
 				<div class="section">
 					<div class="row">
 						<div class="col m2 s12">
-							<img class="circle materialboxed" width="140" src="graphics/officers/placeholder-female.png">
+							<img class="circle materialboxed" width="140" src="graphics/officers/SaingyouE.png">
 						</div>
 						<div class="col m10 s12">
 							<h5>Bulletin Editor: Saingyou Eung</h5>
 							<p class="blue-text"><b>Email:</b> <a href="mailto:saingyoue@gmail.com">saingyoue@gmail.com</a><br>
 							<b>Graduation Year:</b> 2017<br>
-							<b>Quote:</b> ??????</p>
+							<b>Fun Fact:</b>  I've been to 5 countries (mostly in Asia) and I love writing the capitalized letter 'E'.</p>
 						</div>
 					</div>
 				</div>
@@ -137,13 +155,13 @@
 				<div class="section">
 					<div class="row">
 						<div class="col m2 s12">
-							<img class="circle materialboxed" width="140" src="graphics/officers/placeholder-female.png">
+							<img class="circle materialboxed" width="140" src="graphics/officers/DeborahC.png">
 						</div>
 						<div class="col m10 s12">
 							<h5>Co-Historian: Deborah Cheng</h5>
 							<p class="blue-text"><b>Email:</b> <a href="mailto:deborah.cheng@yahoo.com">deborah.cheng@yahoo.com</a><br>
 							<b>Graduation Year:</b> 2017<br>
-							<b>Quote:</b> ??????</p>
+							<b>Fun Fact:</b> ??????</p>
 						</div>
 					</div>
 				</div>
@@ -157,7 +175,7 @@
 							<h5>Co-Historian: Joshua Visperas</h5>
 							<p class="blue-text"><b>Email:</b> <a href="mailto:joshuavisperas@yahoo.com">joshuavisperas@yahoo.com</a><br>
 							<b>Graduation Year:</b> 2017<br>
-							<b>Quote:</b> ??????</p>
+							<b>Fun Fact:</b> ??????</p>
 						</div>
 					</div>
 				</div>
@@ -165,13 +183,13 @@
 				<div class="section">
 					<div class="row">
 						<div class="col m2 s12">
-							<img class="circle materialboxed" width="140" src="graphics/officers/paul.png">
+							<img class="circle materialboxed" width="140" src="graphics/officers/PaulH.png">
 						</div>
 						<div class="col m10 s12">
 							<h5>Co-Webmaster: Paul Hsiao</h5>
 							<p class="blue-text"><b>Email:</b> <a href="mailto:paul.ising.hsiao@gmail.com">paul.ising.hsiao@gmail.com</a><br>
 							<b>Graduation Year:</b> 2017<br>
-							<b>Quote:</b> ??????</p>
+							<b>Fun Fact:</b> I'm actually a panda</p>
 						</div>
 					</div>
 				</div>
@@ -185,7 +203,7 @@
 							<h5>Co-Webmaster: Wesley Soo-Hoo</h5>
 							<p class="blue-text"><b>Email:</b> <a href="mailto:wesoohoo@gmail.com">wesoohoo@gmail.com</a><br>
 							<b>Graduation Year:</b> 2018<br>
-							<b>Quote:</b> "The best way to find yourself is to lose yourself in the service of others." <i>-Mahatma Gandhi</i></p>
+							<b>Fun Fact:</b> PC > Mac</p>
 						</div>
 					</div>
 				</div>
@@ -193,13 +211,13 @@
 				<div class="section">
 					<div class="row">
 						<div class="col m2 s12">
-							<img class="circle materialboxed" width="140" src="graphics/officers/placeholder-female.png">
+							<img class="circle materialboxed" width="140" src="graphics/officers/AkinaI.jpg">
 						</div>
 						<div class="col m10 s12">
 							<h5>Co-Fundraising Chair: Akina Ishimoto</h5>
-							<p class="blue-text"><b>Email:</b> <a href="#!">????????</a><br>
+							<p class="blue-text"><b>Email:</b> <a href="mailto:ishimotoakina@gmail.com">ishimotoakina@gmail.com</a><br>
 							<b>Graduation Year:</b> 2017<br>
-							<b>Quote:</b> ??????</p>
+							<b>Fun Fact:</b> I'm actually Haruna</p>
 						</div>
 					</div>
 				</div>
@@ -213,7 +231,7 @@
 							<h5>Co-Fundraising Chair: Jerry Goss</h5>
 							<p class="blue-text"><b>Email:</b> <a href="#!">????????</a><br>
 							<b>Graduation Year:</b> 2018<br>
-							<b>Quote:</b> ??????</p>
+							<b>Fun Fact:</b> ??????</p>
 						</div>
 					</div>
 				</div>
@@ -225,9 +243,23 @@
 						</div>
 						<div class="col m10 s12">
 							<h5>Publicity Chair: Kaelin Mendez</h5>
-							<p class="blue-text"><b>Email:</b> <a href="#!">????????</a><br>
+							<p class="blue-text"><b>Email:</b> <a href="mailto:keyclubmendez@gmail.com">keyclubmendez@gmail.com</a><br>
 							<b>Graduation Year:</b> 2017<br>
-							<b>Quote:</b> ??????</p>
+							<b>Fun Fact:</b> ??????</p>
+						</div>
+					</div>
+				</div>
+				<div class="divider"></div>
+				<div class="section">
+					<div class="row">
+						<div class="col m2 s12">
+							<img class="circle materialboxed" width="140" src="graphics/officers/placeholder-female.png">
+						</div>
+						<div class="col m10 s12">
+							<h5>ASB Representative: Ashley Kim</h5>
+							<p class="blue-text"><b>Email:</b> <a href="mailto:ashleykim1999@gmail.com">ashleykim1999@gmail.com<br>
+							<b>Graduation Year:</b> 2017<br>
+							<b>Fun Fact:</b> ??????</p>
 						</div>
 					</div>
 				</div>
@@ -244,13 +276,13 @@
 					<div class="col l3 s12">
 						<h5 class="white-text">Pages</h5>
 						<ul>
-							<li><a class="white-text" href="index">Home</a></li>
-							<li><a class="white-text" href="events">Events</a></li>
+							<li><a class="white-text" href="index.html">Home</a></li>
+							<li><a class="white-text" href="events.html">Events</a></li>
 							<li><a class="white-text" href="#">Officers</a></li>
-							<li><a class="white-text" href="bulletin">Bulletin</a></li>
-							<li><a class="white-text" href="connect">Connect</a></li>
-							<li><a class="white-text" href="about">About</a></li>
-							<li><a class="white-text" href="contact">Contact</a></li>
+							<li><a class="white-text" href="bulletin.html">Bulletin</a></li>
+							<li><a class="white-text" href="connect.html">Connect</a></li>
+							<li><a class="white-text" href="about.html">About</a></li>
+							<li><a class="white-text" href="contact.html">Contact</a></li>
 						</ul>
 					</div>
 					<div class="col l3 s12">
