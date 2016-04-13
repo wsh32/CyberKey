@@ -1,0 +1,6 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^division\.camskeyclub\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.division\.camskeyclub\.com$
+RewriteRule ^/?$ "http\:\/\/division19north\.weebly\.com\/" [R=301,L]
+

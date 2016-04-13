@@ -3,19 +3,33 @@ $(function() {
 	(
 		function()
 		{
+			var serializedData = $(this).serialize();
 			$.ajax({
 				type: 'GET',
 				url: 'https://data.sparkfun.com/input/4JdvKDqR7mIqLW7ddqQ1',
-				data: $(this).serialize(),
+				data: serializedData,
 				processData: false,
 				contentType: false,
 				success: function(data) {
+					$.ajax({
+						type: 'GET',
+						url: 'scripts/event.php',
+						data: serializedData,
+						processData: false,
+						contentType: false,
+						success: function(data) {
+							console.log(serializedData);
+							console.log(data);
+							Materialize.toast(data);
+						}
+					});
 					console.log(data);
-					$( '#response' ).empty();
-					$( '#response' ).text( 'Thank you for signing up!' ).css( 'color', 'blue' ).show().fadeOut( 20000 );
 				}
 			});
+			
 			return false;
 		}
 	);
+	
+	
 });

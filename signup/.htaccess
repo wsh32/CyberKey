@@ -1,0 +1,6 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^signup\.camskeyclub\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.signup\.camskeyclub\.com$
+RewriteRule ^/?$ "https\:\/\/data\.sparkfun\.com\/camskeyclubevent" [R=301,L]
+
